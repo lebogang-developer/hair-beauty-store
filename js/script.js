@@ -32,3 +32,25 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
     }, 1000);
   });
 });
+
+// Filter functionality
+const filterButtons = document.querySelectorAll(".filter-btn");
+const products = document.querySelectorAll(".product-card");
+
+filterButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Active button
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const category = btn.dataset.category;
+
+    products.forEach((product) => {
+      if (category === "all" || product.dataset.category === category) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+});
