@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | GlowHair</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Announcement -->
+    <div class="announcement-bar">
+      <p>🔥 Free delivery on orders over R500</p>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <nav class="nav-left">
+        <a href="shop.html">Shop</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="logo">
+        <h1>GlowHair</h1>
+      </div>
+
+      <div class="nav-right">
+        <a href="#"><i class="fa fa-user"></i></a>
+        <a href="#"
+          ><i class="fa fa-shopping-cart"></i
+          ><span class="cart-count">0</span></a
+        >
+        <a href="checkout.html" class="checkout-btn">Checkout</a>
+      </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-page">
+      <h1>Your Cart</h1>
+
+      <div class="cart-container">
+        <!-- Cart Items -->
+        <div class="cart-items">
+          <div class="cart-item" data-price="850">
+            <img src="assets/images/wig-1.jpg" />
+            <div class="item-details">
+              <h3>Brazilian Wig</h3>
+              <p>R850</p>
+
+              <div class="quantity">
+                <button class="minus">-</button>
+                <span class="qty">1</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+
+            <button class="remove"><i class="fa fa-trash"></i></button>
+          </div>
+
+          <div class="cart-item" data-price="120">
+            <img src="assets/images/lashes-3.jpg" />
+            <div class="item-details">
+              <h3>Luxury Lashes</h3>
+              <p>R120</p>
+
+              <div class="quantity">
+                <button class="minus">-</button>
+                <span class="qty">1</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+
+            <button class="remove"><i class="fa fa-trash"></i></button>
+          </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h2>Summary</h2>
+
+          <p>Subtotal: <span id="subtotal">R0</span></p>
+          <p>Delivery: <span id="delivery">R50</span></p>
+          <h3>Total: <span id="total">R0</span></h3>
+
+          <a href="checkout.html" class="checkout-btn big"
+            >Proceed to Checkout</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔻 Main Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand / About -->
+        <div class="footer-col">
+          <h2 class="footer-logo">GlowHair</h2>
+          <p>
+            Your go-to store for premium wigs, lashes, nails, and beauty
+            essentials.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="return-policy.html">Return Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p><i class="fa fa-phone"></i> +27 81 234 5678</p>
+          <p><i class="fa fa-envelope"></i> info@glowhair.co.za</p>
+          <p><i class="fa fa-map-marker-alt"></i> Bloemfontein, South Africa</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 GlowHair. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 🔻 Developer Footer -->
+    <div class="dev-footer">
+      <p>
+        Demo project built by
+        <a href="https://lebogang-developer.netlify.app/" target="_blank"
+          >Lebo Sekaleli</a
+        >
+        — for demonstration purposes only.
+      </p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
