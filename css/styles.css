@@ -1278,3 +1278,116 @@
     flex: 1;
   }
 }
+
+/* Checkout Page */
+.checkout-page {
+  padding: 40px 16px;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Layout */
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form */
+.checkout-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.checkout-form h2 {
+  margin-bottom: 15px;
+}
+
+.checkout-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* WhatsApp */
+.whatsapp-checkout {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.whatsapp-btn-big {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Summary */
+.checkout-summary {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Payment */
+.payment-methods {
+  margin-top: 15px;
+}
+
+.payment-methods label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Button */
+.pay-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: #ff4081;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #e73370;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .checkout-container {
+    flex-direction: row;
+  }
+
+  .checkout-form {
+    flex: 2;
+  }
+
+  .checkout-summary {
+    flex: 1;
+  }
+}

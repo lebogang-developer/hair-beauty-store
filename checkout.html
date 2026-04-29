@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | GlowHair</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Announcement -->
+    <div class="announcement-bar">
+      <p>🔒 Secure Checkout | Fast Delivery Available</p>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <h1>GlowHair</h1>
+      </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-page">
+      <h1>Checkout</h1>
+
+      <div class="checkout-container">
+        <!-- LEFT: Customer Details -->
+        <div class="checkout-form">
+          <h2>Billing Details</h2>
+
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+
+            <input type="text" placeholder="Street Address" required />
+            <input type="text" placeholder="City" required />
+
+            <select>
+              <option>Free State</option>
+              <option>Gauteng</option>
+              <option>Western Cape</option>
+            </select>
+
+            <input type="text" placeholder="Postal Code" />
+          </form>
+
+          <!-- WhatsApp Fallback -->
+          <div class="whatsapp-checkout">
+            <p>Prefer to order via WhatsApp?</p>
+            <a href="https://wa.me/27812345678?text=Hi%20I%20want%20to%20order:%20Brazilian%20Wig%20and%20Lashes%20Total:%20R970"
+   class="whatsapp-btn-big">
+              <i class="fa-brands fa-whatsapp"></i> Checkout via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Order Summary -->
+        <div class="checkout-summary">
+          <h2>Your Order</h2>
+
+          <div class="summary-item">
+            <p>Brazilian Wig x1</p>
+            <span>R850</span>
+          </div>
+
+          <div class="summary-item">
+            <p>Lashes x1</p>
+            <span>R120</span>
+          </div>
+
+          <hr />
+
+          <p>Subtotal: <span id="checkout-subtotal">R970</span></p>
+          <p>Delivery: <span id="checkout-delivery">R0</span></p>
+
+          <h3>Total: <span id="checkout-total">R970</span></h3>
+
+          <!-- Payment Methods -->
+          <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+
+            <label>
+              <input type="radio" name="payment" checked />
+              PayFast (Cards, EFT, Instant EFT)
+            </label>
+
+            <label>
+              <input type="radio" name="payment" />
+              Pay on Collection
+            </label>
+          </div>
+
+          <!-- Pay Button -->
+          <button class="pay-btn">🔒 Pay Securely Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔻 Main Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand / About -->
+        <div class="footer-col">
+          <h2 class="footer-logo">GlowHair</h2>
+          <p>
+            Your go-to store for premium wigs, lashes, nails, and beauty
+            essentials.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="return-policy.html">Return Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p><i class="fa fa-phone"></i> +27 81 234 5678</p>
+          <p><i class="fa fa-envelope"></i> info@glowhair.co.za</p>
+          <p><i class="fa fa-map-marker-alt"></i> Bloemfontein, South Africa</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 GlowHair. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 🔻 Developer Footer -->
+    <div class="dev-footer">
+      <p>
+        Demo project built by
+        <a href="https://lebogang-developer.netlify.app/" target="_blank"
+          >Lebo Sekaleli</a
+        >
+        — for demonstration purposes only.
+      </p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
