@@ -6,6 +6,24 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.operating-hours {
+  margin-top: 20px;
+}
+
+.operating-hours p {
+  margin-bottom: 10px;
+}
+
 /* 🔥 Announcement Bar */
 .announcement-bar {
   background: #000;
@@ -45,8 +63,14 @@
   gap: 15px;
 }
 
-.nav-left a,
 .nav-right a {
+  text-decoration: none;
+  color: #000;
+  /* color: #fff; */
+  font-size: 14px;
+}
+
+.nav-left a {
   text-decoration: none;
   color: #000;
   font-size: 14px;
@@ -60,14 +84,14 @@
   padding: 2px 6px;
   border-radius: 50%;
   position: relative;
-  top: -8px;
+  top: 3px;
   left: -5px;
 }
 
 /* Checkout Button */
 .checkout-btn {
   background: #000;
-  color: #fff;
+  color: #fff !important;
   padding: 6px 10px;
   border-radius: 4px;
 }
@@ -162,7 +186,7 @@
 }
 
 .hero-content h1 {
-  font-size: 28px;
+  font-size: 38px;
   margin-bottom: 12px;
   line-height: 1.3;
 }
