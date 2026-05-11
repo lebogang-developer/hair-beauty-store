@@ -129,3 +129,25 @@ faqItems.forEach((item) => {
     item.classList.toggle("active");
   });
 });
+
+// ==============================
+// ⬆ Scroll To Top Button
+// ==============================
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+// Scroll To Top
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
