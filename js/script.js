@@ -136,18 +136,27 @@ faqItems.forEach((item) => {
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
+// Show button when scrolling
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollTopBtn.style.display = "block";
+
+  if (window.pageYOffset > 300) {
+
+    scrollTopBtn.classList.add("show");
+
   } else {
-    scrollTopBtn.style.display = "none";
+
+    scrollTopBtn.classList.remove("show");
+
   }
+
 });
 
-// Scroll To Top
+// Scroll to top
 scrollTopBtn.addEventListener("click", () => {
+
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: "smooth"
   });
+
 });
