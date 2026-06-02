@@ -134,29 +134,23 @@ faqItems.forEach((item) => {
 // ⬆ Scroll To Top Button
 // ==============================
 
-const scrollTopBtn = document.getElementById("scrollTopBtn");
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-// Show button when scrolling
-window.addEventListener("scroll", () => {
-
-  if (window.pageYOffset > 300) {
-
-    scrollTopBtn.classList.add("show");
-
-  } else {
-
-    scrollTopBtn.classList.remove("show");
-
-  }
-
-});
-
-// Scroll to top
-scrollTopBtn.addEventListener("click", () => {
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+  // Show button on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
   });
 
+  // Scroll to top
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });

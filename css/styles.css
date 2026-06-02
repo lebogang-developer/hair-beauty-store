@@ -157,68 +157,110 @@ h3 {
   }
 }
 
-/* 💬 Floating WhatsApp */
+/* ==============================
+   💬 WhatsApp Floating Button
+================================= */
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 58px;
-  height: 58px;
-  background: #25D366;
-  color: #fff;
+
+  width: 60px;
+  height: 60px;
+
   border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+
+  font-size: 30px;
   text-decoration: none;
-  z-index: 1000;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+  z-index: 9999;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
   transition: 0.3s ease;
 }
 
-/* Hover */
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
 
-/* ⬆ Scroll To Top Button */
+/* ==============================
+   ⬆ Scroll To Top Button
+================================= */
+
 #scrollTopBtn {
   position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+
+  /* IMPORTANT */
+  bottom: 95px;
+
+  right: 25px;
+
+  width: 48px;
+  height: 48px;
+
   border: none;
   outline: none;
+
   border-radius: 50%;
+
   background: #111;
   color: #fff;
+
   font-size: 18px;
+
   cursor: pointer;
-  z-index: 999;
-  
+
+  z-index: 9998;
+
   /* Hidden by default */
   opacity: 0;
   visibility: hidden;
-  
+
+  transform: translateY(20px);
+
   transition: all 0.3s ease;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Active State */
+/* Show button */
 #scrollTopBtn.show {
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 
 /* Hover */
 #scrollTopBtn:hover {
   background: #ff4081;
-  transform: translateY(-3px);
 }
 
+/* ==============================
+   📱 Mobile Adjustments
+================================= */
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
+
+  #scrollTopBtn {
+    width: 44px;
+    height: 44px;
+    bottom: 85px;
+    right: 25px;
+  }
+}
 /* 💇‍♀️ Hero Section */
 .hero {
   position: relative;
