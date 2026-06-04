@@ -1672,3 +1672,11 @@ h3 {
 .faq-item.active .faq-answer {
   max-height: 200px;
 }
+
+.faq-question i {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(45deg);
+}
