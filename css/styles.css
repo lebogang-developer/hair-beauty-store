@@ -1604,79 +1604,223 @@ h3 {
   border-radius: 10px;
 }
 
-/* ❓ FAQ Page */
+.policy-contact h3 {
+  margin-bottom: 15px;
+}
+
+/* =========================
+   FAQ PAGE
+========================= */
+
 .faq-page {
-  padding: 60px 0;
-  background: #fff;
+  padding: 80px 0;
+  background: #f8f9fc;
 }
 
 /* Header */
+
 .faq-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .faq-header h1 {
-  font-size: 36px;
+  font-size: 2.8rem;
   margin-bottom: 15px;
 }
 
 .faq-intro {
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
   color: #666;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
-/* FAQ Container */
-.faq-container {
-  max-width: 900px;
-  margin: auto;
+/* Grid */
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
 }
 
-/* FAQ Item */
-.faq-item {
-  border-bottom: 1px solid #eee;
-  padding: 15px 0;
+/* Card */
+
+.faq-card {
+  background: #fff;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+
+  border: 1px solid #eee;
+}
+
+.faq-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* Question */
-.faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  outline: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 10px 0;
+
+.faq-card h3 {
+  font-size: 18px;
+
+  margin-bottom: 15px;
+
+  color: #111;
+
+  line-height: 1.5;
 }
 
 /* Answer */
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+
+.faq-card p {
+  color: #666;
+
+  line-height: 1.8;
+
+  font-size: 15px;
 }
 
-.faq-answer p {
-  padding: 10px 0;
-  color: #555;
-  line-height: 1.7;
+/* Tablet */
+
+@media (min-width: 768px) {
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* Active */
-.faq-item.active .faq-answer {
-  max-height: 200px;
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .faq-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.faq-question i {
-  transition: transform 0.3s ease;
+/* =========================
+   FAQ CTA
+========================= */
+
+.faq-cta {
+  padding: 100px 0;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../assets/images/curly-hair.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
 }
 
-.faq-item.active .faq-question i {
-  transform: rotate(45deg);
+.faq-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-cta h2 {
+  color: #fff;
+  font-size: 2.8rem;
+
+  margin: 20px 0;
+}
+
+.faq-cta p {
+  color: #ddd;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.faq-cta-buttons {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.faq-whatsapp-btn,
+.faq-call-btn {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px 28px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.faq-whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+}
+
+.faq-call-btn {
+  background: #fff;
+  color: #111;
+}
+
+.faq-whatsapp-btn:hover,
+.faq-call-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* Contact Info */
+
+.faq-contact-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  color: #fff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.contact-item i {
+  color: #d4af37;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  .faq-cta-buttons {
+    flex-direction: row;
+  }
+
+  .faq-contact-info {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
 }
