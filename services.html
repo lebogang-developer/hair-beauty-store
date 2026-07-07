@@ -11,24 +11,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-     <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- Announcement -->
-    <div class="announcement-bar">
+    <!-- <div class="announcement-bar">
       <p>🔥 Free delivery on orders over R500 | Shop now!</p>
-    </div>
+    </div> -->
 
-    <!-- 🔝 Navbar -->
     <header class="navbar">
       <div class="nav-container">
         <!-- Left Links -->
         <nav class="nav-left">
+          <a href="index.html">Home</a>
           <a href="shop.html">Shop</a>
-          <a href="product.html">Products</a>
+          <a href="services.html">Services</a>
           <a href="contact.html">Contact</a>
         </nav>
 
@@ -57,65 +57,62 @@
 
       <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
-        <a href="product.html">Products</a>
+        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
-        <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
+        <!-- <a href="cart.html">Cart</a> -->
+        <a href="cart.html">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <!-- <a href="checkout.html">Checkout</a> -->
+        <a href="checkout.html" class="checkout-btn">Checkout</a>
       </div>
     </header>
 
-    <!-- Product Section -->
-    <section class="product-page">
-      <!-- Images -->
-      <div class="product-images">
-        <img id="main-image" src="assets/images/wig1.jpg" alt="Product" />
-
-        <div class="thumbnail-row">
-          <img src="assets/images/wig-1.jpg" onclick="changeImage(this)" />
-          <img src="assets/images/wig-2.jpg" onclick="changeImage(this)" />
-          <img src="assets/images/wig-3.jpg" onclick="changeImage(this)" />
-        </div>
-      </div>
-
-      <!-- Product Info -->
-      <div class="product-details">
-        <h1>Brazilian Wig 14"</h1>
-
-        <p class="price">R850</p>
-
-        <p class="description">
-          Premium Brazilian wig made from high-quality human hair. Soft,
-          durable, and perfect for everyday wear or special occasions.
-        </p>
-
-        <!-- Options -->
-        <div class="product-options">
-          <label>Length:</label>
-          <select>
-            <option>10 inch</option>
-            <option>14 inch</option>
-            <option>18 inch</option>
-          </select>
-        </div>
-
-        <!-- Buttons -->
-        <div class="product-actions">
-          <button class="add-to-cart">Add to Cart</button>
-
-          <a href="https://wa.me/27794585741" class="whatsapp-order">
-            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
-          </a>
-        </div>
-
-        <!-- Extra Info -->
-        <div class="product-extra">
-          <p>✔ Secure Payments</p>
-          <p>✔ Fast Delivery</p>
-          <p>✔ Quality Guaranteed</p>
-        </div>
-      </div>
-    </section>
+    <!-- Services -->
+    <div class="container">
+      <h1>What We Do</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aliquam
+        tenetur ratione eaque in autem, ad facilis eos, tempora natus voluptates
+        aperiam quidem eum quo velit asperiores, vel doloremque sed.
+        Consequuntur ducimus cupiditate necessitatibus numquam voluptatum,
+        aliquam at suscipit officiis asperiores ipsam provident, dolores
+        incidunt. Consequatur nemo, velit doloribus harum quia rerum modi
+        repudiandae quod expedita at dicta, blanditiis possimus. Iusto
+        exercitationem, tenetur qui quaerat sequi minus magni reiciendis
+        corrupti hic. Reiciendis tempora incidunt eaque saepe pariatur fuga ea
+        voluptate dignissimos, earum quos quisquam labore ut, odio et minima
+        error. Eaque totam hic ullam id praesentium labore, excepturi quia
+        doloremque maiores culpa iste expedita asperiores veniam consequatur
+        laboriosam commodi in. Provident unde dolores nobis officiis dolorem
+        deserunt sed itaque ullam! Suscipit architecto voluptatem vero, sapiente
+        eligendi earum officia voluptas ducimus, eveniet iusto vitae natus, sed
+        dignissimos et necessitatibus nemo ratione unde ab dolore amet itaque
+        quam eum molestias quia. Rem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aliquam
+        tenetur ratione eaque in autem, ad facilis eos, tempora natus voluptates
+        aperiam quidem eum quo velit asperiores, vel doloremque sed.
+        Consequuntur ducimus cupiditate necessitatibus numquam voluptatum,
+        aliquam at suscipit officiis asperiores ipsam provident, dolores
+        incidunt. Consequatur nemo, velit doloribus harum quia rerum modi
+        repudiandae quod expedita at dicta, blanditiis possimus. Iusto
+        exercitationem, tenetur qui quaerat sequi minus magni reiciendis
+        corrupti hic. Reiciendis tempora incidunt eaque saepe pariatur fuga ea
+        voluptate dignissimos, earum quos quisquam labore ut, odio et minima
+        error. Eaque totam hic ullam id praesentium labore, excepturi quia
+        doloremque maiores culpa iste expedita asperiores veniam consequatur
+        laboriosam commodi in. Provident unde dolores nobis officiis dolorem
+        deserunt sed itaque ullam! Suscipit architecto voluptatem vero, sapiente
+        eligendi earum officia voluptas ducimus, eveniet iusto vitae natus, sed
+        dignissimos et necessitatibus nemo ratione unde ab dolore amet itaque
+        quam eum molestias quia. Rem.
+      </p>
+    </div>
 
     <!-- 🔻 Main Footer -->
     <footer class="footer">
@@ -146,14 +143,19 @@
         <div class="footer-col">
           <h3>Contact</h3>
           <p><i class="fa fa-phone"></i> +27 81 234 5678</p>
-          <p><i class="fa fa-envelope"></i> info@crystalmobilebeautician.co.za</p>
-          <p><i class="fa fa-map-marker-alt"></i> King Edward Rd, Willows, Bloemfontein, Free State, South Africa</p>
+          <p>
+            <i class="fa fa-envelope"></i> info@crystalmobilebeautician.co.za
+          </p>
+          <p>
+            <i class="fa fa-map-marker-alt"></i> King Edward Rd, Willows,
+            Bloemfontein, Free State, South Africa
+          </p>
           <br />
           <div>
-           <p>Monday to Friday: 09H00 - 18H00</p>
-          <p>Saturdays: 09H00 - 16H00</p>
-          <p>Sundays: Closed</p>
-          <p>Public Holidays: Strictly by appointment</p>
+            <p>Monday to Friday: 09H00 - 18H00</p>
+            <p>Saturdays: 09H00 - 16H00</p>
+            <p>Sundays: Closed</p>
+            <p>Public Holidays: Strictly by appointment</p>
           </div>
         </div>
 

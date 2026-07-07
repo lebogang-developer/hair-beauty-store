@@ -20,20 +20,18 @@
   </head>
   <body>
     <!-- 🔥 Announcement Bar -->
-    <div class="announcement-bar">
-      <p>
-        🔥 Free delivery on orders over R500 | Order now via WhatsApp & get 10%
-        OFF!
-      </p>
-    </div>
+    <!-- <div class="announcement-bar">
+      <p>🚚 Nationwide Delivery Available Across South Africa</p>
+    </div> -->
 
     <!-- 🔝 Navbar -->
     <header class="navbar">
       <div class="nav-container">
         <!-- Left Links -->
         <nav class="nav-left">
+          <a href="index.html">Home</a>
           <a href="shop.html">Shop</a>
-          <a href="product.html">Products</a>
+          <a href="services.html">Services</a>
           <a href="contact.html">Contact</a>
         </nav>
 
@@ -62,8 +60,9 @@
 
       <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
-        <a href="product.html">Products</a>
+        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <!-- <a href="cart.html">Cart</a> -->
         <a href="cart.html">
@@ -78,15 +77,12 @@
     <!-- 💇‍♀️ Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Luxury Wigs That Elevate Your Look</h1>
+        <!-- <h1>Luxury Wigs That Elevate Your Look</h1> -->
         <p>
           Shop premium quality wigs, lashes, and beauty essentials. Look good,
           feel confident, and slay every day.
         </p>
-        <p>
-          All our wigs come pre-styled, customised and lace is cut on gluless
-          wigs only. Frontals come with lace uncut!
-        </p>
+        <p>All our wigs come pre-styled and customised.</p>
 
         <div class="hero-buttons">
           <a href="shop.html" class="btn primary-btn">Shop Now</a>
@@ -106,34 +102,41 @@
 
       <div class="category-grid">
         <!-- Wigs -->
-        <a href="shop.html" class="category-card">
-          <img src="assets/images/full-frontal-1.jpg" alt="Wigs" />
+        <a href="services.html" class="category-card">
+          <img src="assets/images/categories/wigs.jpg" alt="Wigs" />
           <div class="category-overlay">
             <h3>Wigs</h3>
           </div>
         </a>
 
         <!-- Lashes -->
-        <a href="shop.html" class="category-card">
-          <img src="assets/images/lashes.jpg" alt="Lashes" />
+        <a href="services.html" class="category-card">
+          <img src="assets/images/categories/lashes.jpg" alt="Lashes" />
           <div class="category-overlay">
             <h3>Lashes</h3>
           </div>
         </a>
 
         <!-- Nails -->
-        <a href="shop.html" class="category-card">
-          <img src="assets/images/nails.jpg" alt="Nails" />
+        <a href="services.html" class="category-card">
+          <img src="assets/images/categories/nails.jpg" alt="Nails" />
           <div class="category-overlay">
             <h3>Nails</h3>
           </div>
         </a>
 
         <!-- Makeup -->
-        <a href="shop.html" class="category-card">
-          <img src="assets/images/makeup.jpg" alt="Makeup" />
+        <a href="services.html" class="category-card">
+          <img src="assets/images/categories/makeup.jpg" alt="Makeup" />
           <div class="category-overlay">
-            <h3>Makeup</h3>
+            <h3>Make Up</h3>
+          </div>
+        </a>
+        <!-- Brown Tint -->
+        <a href="services.html" class="category-card">
+          <img src="assets/images/categories/brown-tint.jpg" alt="Makeup" />
+          <div class="category-overlay">
+            <h3>Brown Tint</h3>
           </div>
         </a>
       </div>
@@ -150,13 +153,16 @@
         <!-- Product 1 -->
         <div class="product-card">
           <div class="product-badge">🔥 Best Seller</div>
-          <img src="assets/images/curly-hair.jpg" alt="Brazilian Wig" />
+          <img
+            src="assets/images/featured/curly-hair.jpg"
+            alt="Brazilian Wig"
+          />
 
           <div class="product-info">
             <h3>14" 5x5 Gluless #4 Curly</h3>
             <p class="price">R2000</p>
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -166,13 +172,13 @@
 
         <!-- Product 2 -->
         <div class="product-card">
-          <img src="assets/images/gluless-hair.jpg" alt="Lashes" />
+          <img src="assets/images/featured/gluless-curly.jpg" alt="Lashes" />
           <div class="product-info">
             <h3>26" 4x4 Gluless</h3>
             <p class="price">R2600</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -182,13 +188,13 @@
 
         <!-- Product 3 -->
         <div class="product-card">
-          <img src="assets/images/gluless-hair-1.jpg" alt="Nails" />
+          <img src="assets/images/featured/gluless-hair.jpg" alt="Nails" />
           <div class="product-info">
             <h3>8" 4x4 Gluless</h3>
             <p class="price">R800</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -198,13 +204,13 @@
 
         <!-- Product 4 -->
         <div class="product-card">
-          <img src="assets/images/full-frontal.jpg" alt="Makeup" />
+          <img src="assets/images/featured/full-frontal.jpg" alt="Makeup" />
           <div class="product-info">
             <h3>28" Full Frontal #4 Curly</h3>
             <p class="price">R3800</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -215,14 +221,14 @@
         <!-- Product 5 -->
         <div class="product-card">
           <div class="product-badge">🔥 Best Seller</div>
-          <img src="assets/images/full-frontal-1.jpg" alt="Brazilian Wig" />
+          <img src="assets/images/featured/full-frontal-1.jpg" alt="Brazilian Wig" />
 
           <div class="product-info">
             <h3>20" Full Frontal #4/27</h3>
             <p class="price">R2400</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -232,12 +238,12 @@
 
         <!-- Product 6 -->
         <div class="product-card">
-          <img src="assets/images/hd-gluless.jpg" alt="Lashes" />
+          <img src="assets/images/featured/hd-gluless.jpg" alt="Lashes" />
           <div class="product-info">
             <h3>16" HD 6x6 Gluless</h3>
             <p class="price">R2500</p>
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -247,13 +253,13 @@
 
         <!-- Product 7 -->
         <div class="product-card">
-          <img src="assets/images/gluless-curly.jpg" alt="Nails" />
+          <img src="assets/images/featured/gluless-sdd.jpg" alt="Nails" />
           <div class="product-info">
             <h3>18" 5x5 Gluless #1/4 Curly</h3>
             <p class="price">R2500</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a href="https://wa.me/27794585741" class="whatsapp-order">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -263,13 +269,13 @@
 
         <!-- Product 8 -->
         <div class="product-card">
-          <img src="assets/images/gluless-curly-1.jpg" alt="Makeup" />
+          <img src="assets/images/featured/gluless-curly-1.jpg" alt="Makeup" />
           <div class="product-info">
             <h3>18" HD 5x5 Gluless Curly</h3>
             <p class="price">R2700</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a
                 href="https://wa.me/27794585741"
                 class="whatsapp-order"
@@ -283,13 +289,13 @@
 
         <!-- Product 9 -->
         <div class="product-card">
-          <img src="assets/images/gluless-sdd.jpg" alt="Makeup" />
+          <img src="assets/images/featured/gluless-hair-1.jpg" alt="Makeup" />
           <div class="product-info">
             <h3>10" 5x5 Gluless SDD #4</h3>
             <p class="price">R1800</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a
                 href="https://wa.me/27794585741"
                 class="whatsapp-order"
@@ -302,13 +308,13 @@
         </div>
         <!-- Product 10 -->
         <div class="product-card">
-          <img src="assets/images/frontal-curly.jpg" alt="Makeup" />
+          <img src="assets/images/featured/frontal-curly.jpg" alt="Makeup" />
           <div class="product-info">
             <h3>18" Full Frontal Curly</h3>
             <p class="price">R2900</p>
 
             <div class="product-actions">
-              <button class="add-to-cart">Add to Cart</button>
+              <a href="cart.html" class="add-to-cart">Add to Cart</a>
               <a
                 href="https://wa.me/27794585741"
                 class="whatsapp-order"
@@ -406,31 +412,34 @@
       </div>
 
       <div class="testimonials-grid">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
-          <img src="assets/images/client1.jpg" alt="Client" />
-          <p>
-            “ Few yeras ago I stumble across Crystal Mobile Beatician and for a
-            while I didn't know how I look with make-up but I was honestly
-            impressed with the experience.Ausi Ntombi is always professional,
-            friendly, and very attentive to detail!”
-          </p>
-          <h4>— Seya.</h4>
-        </div>
-
         <!-- Testimonial 2 -->
         <div class="testimonial-card">
-          <img src="assets/images/client2.jpg" alt="Client" />
+          <img src="assets/images/testimonials/client2.jpg" alt="Client" />
           <p>
             “I love doing my installation and individual eyelashes at Crystal
             Mobile Beautician, the service is the best! ”
           </p>
-          <h4>— Moureen.</h4>
+          <h4> — Maureen.</h4>
+        </div>
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <img src="assets/images/testimonials/client1.jpg" alt="Client" />
+          <p>
+            “Few years ago ,I stumbled across Crystal Mobile Beautician, and for
+            a while I didn't know how I would look with makeup on. But, I was
+            honestly impressed with the experience.Ausi Ntombi is always
+            professional, friendly, and very attentive to detail, always feel
+            comfortable and confident that I was in good hands. What stood out
+            most was her patience, creativity, and passion for beauty. Would
+            definitely recommend Crystal Mobile Beautician to anyone looking for
+            quality makeup services with a personal touch. Xo Xo!"
+          </p>
+          <h4>— Seya.</h4>
         </div>
 
         <!-- Testimonial 3 -->
         <div class="testimonial-card">
-          <img src="assets/images/client3.jpg" alt="Client" />
+          <img src="assets/images/testimonials/client3.jpg" alt="Client" />
           <p>
             “ Crystal Mobile Beautician, I never knew I could look this good
             until I met you. Your positive attitude makes every appointment

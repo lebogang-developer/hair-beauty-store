@@ -25,13 +25,13 @@ h3 {
 }
 
 /* 🔥 Announcement Bar */
-.announcement-bar {
+/* .announcement-bar {
   background: #000;
   color: #fff;
   text-align: center;
   padding: 8px;
   font-size: 14px;
-}
+} */
 
 /* 🔝 Sticky Navbar */
 .navbar {
@@ -265,7 +265,7 @@ h3 {
 .hero {
   position: relative;
   height: 90vh;
-  background: url("../assets/images/frontal-curly.jpg") center/cover no-repeat;
+  background: url("../assets/images/featured/frontal-curly.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
