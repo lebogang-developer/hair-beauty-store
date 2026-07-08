@@ -2248,6 +2248,175 @@ h3 {
   }
 }
 
+/* ===================================
+   BOOKING CTA
+=================================== */
+
+.booking-cta {
+  position: relative;
+
+  padding: 120px 20px;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../assets/images/categories/wigs.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  text-align: center;
+}
+
+.booking-overlay {
+  width: 100%;
+}
+
+.booking-cta .container {
+  max-width: 850px;
+
+  margin: auto;
+}
+
+.booking-cta h2 {
+  color: #fff;
+
+  font-size: 2.7rem;
+
+  font-family: "Playfair Display", serif;
+
+  margin: 20px 0;
+
+  line-height: 1.2;
+}
+
+.booking-cta p {
+  color: rgba(255, 255, 255, 0.9);
+
+  line-height: 1.9;
+
+  margin-bottom: 45px;
+
+  font-size: 1rem;
+}
+
+/* Buttons */
+
+.booking-buttons {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* Primary */
+
+.booking-btn-primary {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background: #d4af37;
+
+  color: #111;
+
+  text-decoration: none;
+
+  padding: 16px 34px;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  transition: 0.35s;
+}
+
+.booking-btn-primary:hover {
+  background: #fff;
+
+  transform: translateY(-5px);
+}
+
+/* Secondary */
+
+.booking-btn-secondary {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 16px 34px;
+
+  border-radius: 50px;
+
+  border: 2px solid #fff;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  transition: 0.35s;
+}
+
+.booking-btn-secondary:hover {
+  background: #25d366;
+
+  border-color: #25d366;
+
+  color: #fff;
+
+  transform: translateY(-5px);
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .booking-buttons {
+    flex-direction: row;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .booking-cta h2 {
+    font-size: 3.5rem;
+  }
+
+  .booking-cta p {
+    font-size: 1.1rem;
+  }
+}
+.booking-note {
+  margin-top: 35px;
+
+  color: #fff;
+
+  font-size: 0.95rem;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.booking-note i {
+  color: #25d366;
+}
+
 /* =========================
    FAQ PAGE
 ========================= */
