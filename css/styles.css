@@ -265,7 +265,8 @@ h3 {
 .hero {
   position: relative;
   height: 90vh;
-  background: url("../assets/images/featured/frontal-curly.jpg") center/cover no-repeat;
+  background: url("../assets/images/featured/frontal-curly.jpg") center/cover
+    no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1606,6 +1607,645 @@ h3 {
 
 .policy-contact h3 {
   margin-bottom: 15px;
+}
+
+/* ===================================
+   SERVICES HERO
+=================================== */
+
+.services-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("../assets/images/products/nails-1.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+/* Scroll Indicator */
+
+.scroll-indicator {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-indicator span {
+  width: 28px;
+  height: 48px;
+
+  border: 2px solid rgba(255, 255, 255, 0.7);
+
+  border-radius: 20px;
+
+  position: relative;
+}
+
+.scroll-indicator span::before {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  left: 50%;
+
+  width: 6px;
+  height: 6px;
+
+  background: #d4af37;
+
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+
+  animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 18px);
+  }
+}
+
+/* Dark Overlay */
+
+.services-hero .overlay {
+  width: 100%;
+  padding: 100px 20px;
+}
+
+/* Hero Content */
+
+.services-hero .container {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Section Tag */
+
+.services-hero .section-tag {
+  display: inline-block;
+
+  background: rgba(212, 175, 55, 0.15);
+
+  color: #d4af37;
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 20px;
+}
+
+/* Heading */
+
+.services-hero h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 2.6rem;
+
+  color: #fff;
+
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+/* Description */
+
+.services-hero p {
+  color: rgba(255, 255, 255, 0.9);
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  align-items: center;
+}
+
+/* Primary Button */
+
+.hero-buttons .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d4af37;
+
+  color: #111;
+
+  padding: 15px 34px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.35s ease;
+}
+
+.hero-buttons .btn-primary:hover {
+  background: #fff;
+
+  transform: translateY(-4px);
+}
+
+/* Secondary Button */
+
+.hero-buttons .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+
+  color: #fff;
+
+  border: 2px solid #fff;
+
+  padding: 15px 34px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.35s ease;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background: #fff;
+  color: #111;
+
+  transform: translateY(-4px);
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media (min-width: 768px) {
+  .services-hero h1 {
+    font-size: 3.6rem;
+  }
+
+  .services-hero p {
+    font-size: 1.05rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* ===================================
+   DESKTOP
+=================================== */
+
+@media (min-width: 1200px) {
+  .services-hero {
+    min-height: 90vh;
+    background-attachment: fixed;
+  }
+
+  .services-hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .services-hero p {
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto 40px;
+  }
+}
+
+/* ===================================
+   SERVICES SECTION
+=================================== */
+
+.services-section {
+  padding: 100px 0;
+  background: #faf8f6;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.section-heading p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ===================================
+   GRID
+=================================== */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  padding: 20px;
+}
+
+/* ===================================
+   SERVICE CARD
+=================================== */
+
+.service-card {
+  background: #fff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  transition: 0.4s ease;
+
+  position: relative;
+  padding: 30px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* ===================================
+   IMAGE
+=================================== */
+
+.service-card img {
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===================================
+   CONTENT
+=================================== */
+
+.service-content {
+  padding: 30px;
+
+  position: relative;
+}
+
+/* ===================================
+   ICON
+=================================== */
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+
+  background: #d4af37;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: -65px;
+  margin-bottom: 25px;
+
+  position: relative;
+
+  z-index: 10;
+
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
+}
+
+.service-icon i {
+  color: white;
+
+  font-size: 28px;
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.service-content h3 {
+  font-size: 1.5rem;
+
+  margin-bottom: 15px;
+
+  color: #222;
+
+  font-family: "Playfair Display", serif;
+}
+
+/* ===================================
+   DESCRIPTION
+=================================== */
+
+.service-content p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.service-content a {
+  display: inline-block;
+
+  background: #d4af37;
+
+  color: #111;
+
+  text-decoration: none;
+
+  padding: 14px 30px;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  transition: 0.35s ease;
+}
+
+.service-content a:hover {
+  background: #111;
+
+  color: white;
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================================
+   DESKTOP
+=================================== */
+
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card img {
+    height: 220px;
+  }
+}
+
+/* ===================================
+   WHY CHOOSE CRYSTAL
+=================================== */
+
+.why-crystal {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  margin-top: 60px;
+}
+
+.why-card {
+  background: #faf8f6;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  transition: 0.35s;
+
+  border: 1px solid #eee;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+  width: 85px;
+  height: 85px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: #d4af37;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.why-icon i {
+  color: #fff;
+
+  font-size: 32px;
+}
+
+.why-card h3 {
+  font-family: "Playfair Display", serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.5rem;
+}
+
+.why-card p {
+  color: #666;
+
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .why-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===================================
+   BOOKING PROCESS
+=================================== */
+
+.booking-process {
+  padding: 100px 0;
+
+  background: #faf8f6;
+}
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 35px;
+
+  margin-top: 60px;
+}
+
+.process-card {
+  position: relative;
+
+  background: #fff;
+
+  padding: 40px 30px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  transition: 0.35s;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+}
+
+.process-card span {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  font-size: 3rem;
+
+  color: rgba(212, 175, 55, 0.18);
+
+  font-weight: bold;
+}
+
+.process-card i {
+  width: 85px;
+
+  height: 85px;
+
+  background: #d4af37;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 30px;
+
+  margin: auto auto 25px;
+}
+
+.process-card h3 {
+  font-family: "Playfair Display", serif;
+
+  margin-bottom: 15px;
+}
+
+.process-card p {
+  line-height: 1.8;
+
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* =========================
