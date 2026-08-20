@@ -1,0 +1,1102 @@
+/* =========================================================
+   CRYSTAL MOBILE BEAUTICIAN
+   SERVICES + BOOKING SYSTEM
+   Mobile First
+========================================================= */
+
+/* =========================================================
+   GLOBAL BOOKING VARIABLES
+========================================================= */
+
+:root {
+  --crystal-gold: #d4af37;
+  --crystal-gold-dark: #b8941f;
+
+  --crystal-black: #171717;
+  --crystal-dark: #252525;
+
+  --crystal-white: #ffffff;
+  --crystal-light: #faf8f6;
+  --crystal-border: #e9e5df;
+
+  --crystal-text: #333333;
+  --crystal-muted: #777777;
+
+  --crystal-green: #25d366;
+}
+
+/* =========================================================
+   BOOKING PAGE
+========================================================= */
+
+.booking-page {
+  min-height: 100vh;
+
+  background: #faf8f6;
+
+  padding: 35px 15px 80px;
+}
+
+/* =========================================================
+   BOOKING CONTAINER
+========================================================= */
+
+.booking-container {
+  width: 100%;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   BACK TO SERVICES
+========================================================= */
+
+.back-services {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--crystal-text);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  margin-bottom: 30px;
+
+  transition: all 0.3s ease;
+}
+
+.back-services:hover {
+  color: var(--crystal-gold-dark);
+
+  transform: translateX(-4px);
+}
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.booking-progress {
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin: 0 auto 50px;
+
+  max-width: 800px;
+}
+
+/* Horizontal line */
+
+.progress-line {
+  position: absolute;
+
+  top: 16px;
+
+  left: 10%;
+
+  right: 10%;
+
+  height: 2px;
+
+  background: #ddd;
+
+  z-index: 0;
+}
+
+/* Progress step */
+
+.progress-step {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+
+  width: 25%;
+}
+
+/* Number */
+
+.progress-step span {
+  width: 34px;
+
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0 auto 8px;
+
+  border-radius: 50%;
+
+  background: #e4e0da;
+
+  color: #777;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  border: 3px solid #faf8f6;
+
+  transition: all 0.3s ease;
+}
+
+/* Label */
+
+.progress-step p {
+  margin: 0;
+
+  font-size: 11px;
+
+  color: #888;
+
+  line-height: 1.3;
+}
+
+/* Active */
+
+.progress-step.active span {
+  background: var(--crystal-gold);
+
+  color: #fff;
+}
+
+.progress-step.active p {
+  color: var(--crystal-black);
+
+  font-weight: 600;
+}
+
+/* Completed */
+
+.progress-step.completed span {
+  background: var(--crystal-black);
+
+  color: #fff;
+}
+
+/* =========================================================
+   BOOKING HEADING
+========================================================= */
+
+.booking-heading {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0 auto 45px;
+}
+
+.booking-heading .section-tag {
+  color: var(--crystal-gold-dark);
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.booking-heading h1 {
+  font-family: "Playfair Display", serif;
+
+  color: var(--crystal-black);
+
+  font-size: 2rem;
+
+  line-height: 1.2;
+
+  margin-bottom: 15px;
+}
+
+.booking-heading > p:last-child {
+  color: var(--crystal-muted);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   BOOKING STEPS
+========================================================= */
+
+.booking-step {
+  display: none;
+}
+
+.booking-step.active {
+  display: block;
+}
+
+/* =========================================================
+   SERVICE CATEGORY
+========================================================= */
+
+.service-category {
+  margin-bottom: 35px;
+}
+
+/* Category heading */
+
+.category-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+}
+
+.category-heading i {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(212, 175, 55, 0.12);
+
+  color: var(--crystal-gold-dark);
+
+  border-radius: 50%;
+
+  font-size: 15px;
+}
+
+.category-heading h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.35rem;
+
+  color: var(--crystal-black);
+
+  margin: 0;
+}
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.booking-services {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.booking-service {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding: 22px;
+
+  background: #fff;
+
+  border: 1px solid var(--crystal-border);
+
+  border-radius: 14px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+
+.booking-service:hover {
+  border-color: rgba(212, 175, 55, 0.55);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  transform: translateY(-2px);
+}
+
+/* Selected */
+
+.booking-service.selected {
+  border-color: var(--crystal-gold);
+
+  background: #fffdf7;
+
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.12);
+}
+
+/* Service title */
+
+.booking-service h3 {
+  margin: 0 0 7px;
+
+  color: var(--crystal-black);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.15rem;
+}
+
+/* Description */
+
+.booking-service p {
+  margin: 0 0 12px;
+
+  color: var(--crystal-muted);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+/* Duration */
+
+.booking-service > div:first-child > span:not(.popular-badge) {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+.booking-service > div:first-child > span i {
+  color: var(--crystal-gold-dark);
+}
+
+/* =========================================================
+   SERVICE PRICE
+========================================================= */
+
+.service-price {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid #eee;
+
+  padding-top: 15px;
+}
+
+.service-price strong {
+  font-size: 1.1rem;
+
+  color: var(--crystal-black);
+}
+
+/* =========================================================
+   ADD SERVICE BUTTON
+========================================================= */
+
+.add-service {
+  border: none;
+
+  background: var(--crystal-black);
+
+  color: #fff;
+
+  padding: 9px 20px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.add-service:hover {
+  background: var(--crystal-gold);
+}
+
+/* Selected button */
+
+.booking-service.selected .add-service {
+  background: var(--crystal-gold);
+}
+
+.booking-service.selected .add-service::after {
+  content: " ✓";
+}
+
+/* =========================================================
+   POPULAR BADGE
+========================================================= */
+
+.popular-badge {
+  display: inline-block;
+
+  background: var(--crystal-gold);
+
+  color: #fff;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 10px;
+}
+
+/* =========================================================
+   STEP ACTIONS
+========================================================= */
+
+.step-actions {
+  display: flex;
+
+  flex-direction: column-reverse;
+
+  gap: 12px;
+
+  margin-top: 40px;
+}
+
+.continue-btn,
+.back-btn {
+  min-height: 50px;
+
+  border-radius: 30px;
+
+  padding: 13px 25px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Continue */
+
+.continue-btn {
+  border: none;
+
+  background: var(--crystal-black);
+
+  color: #fff;
+}
+
+.continue-btn:hover:not(:disabled) {
+  background: var(--crystal-gold);
+
+  transform: translateY(-2px);
+}
+
+.continue-btn:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+/* Back */
+
+.back-btn {
+  border: 1px solid #ddd;
+
+  background: #fff;
+
+  color: var(--crystal-black);
+}
+
+.back-btn:hover {
+  border-color: var(--crystal-gold);
+
+  color: var(--crystal-gold-dark);
+}
+
+/* =========================================================
+   DATE & TIME
+========================================================= */
+
+.date-time-container {
+  background: #fff;
+
+  border: 1px solid var(--crystal-border);
+
+  border-radius: 18px;
+
+  padding: 25px;
+}
+
+/* Date */
+
+.date-selection {
+  margin-bottom: 35px;
+}
+
+.date-selection label {
+  display: block;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  color: var(--crystal-black);
+}
+
+#booking-date {
+  width: 100%;
+
+  height: 50px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 0 15px;
+
+  font-family: inherit;
+
+  color: var(--crystal-text);
+
+  background: #fff;
+
+  outline: none;
+}
+
+#booking-date:focus {
+  border-color: var(--crystal-gold);
+}
+
+/* Time heading */
+
+.time-selection h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 15px;
+}
+
+/* Time grid */
+
+.time-slots {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+/* Time button */
+
+.time-slot {
+  border: 1px solid #ddd;
+
+  background: #fff;
+
+  border-radius: 9px;
+
+  padding: 13px 10px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+  border-color: var(--crystal-gold);
+}
+
+.time-slot.selected {
+  background: var(--crystal-gold);
+
+  color: #fff;
+
+  border-color: var(--crystal-gold);
+}
+
+/* Placeholder */
+
+.time-placeholder {
+  grid-column: 1/-1;
+
+  color: #888;
+
+  text-align: center;
+
+  font-size: 13px;
+
+  padding: 20px;
+}
+
+/* =========================================================
+   REVIEW CARD
+========================================================= */
+
+.review-card {
+  background: #fff;
+
+  border: 1px solid var(--crystal-border);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+/* Review section */
+
+.review-section {
+  padding: 25px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.review-section h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.2rem;
+
+  margin: 0 0 20px;
+}
+
+/* Review service */
+
+.review-service {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.review-service:last-child {
+  border-bottom: none;
+}
+
+.review-service-name {
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.review-service-duration {
+  display: block;
+
+  color: #888;
+
+  font-size: 11px;
+
+  margin-top: 4px;
+}
+
+.review-service-price {
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* Review details */
+
+.review-detail {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 10px 0;
+
+  font-size: 13px;
+}
+
+.review-detail span {
+  color: #777;
+}
+
+.review-detail i {
+  color: var(--crystal-gold-dark);
+
+  margin-right: 7px;
+}
+
+.review-detail strong {
+  color: var(--crystal-black);
+}
+
+/* =========================================================
+   REVIEW TOTAL
+========================================================= */
+
+.review-total {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  background: #faf8f6;
+}
+
+.review-total div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.review-total span {
+  color: #777;
+
+  font-size: 12px;
+}
+
+.review-total strong {
+  font-size: 1.25rem;
+
+  color: var(--crystal-black);
+}
+
+/* =========================================================
+   CONFIRMATION
+========================================================= */
+
+.confirmation-card {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  padding: 45px 25px;
+
+  text-align: center;
+
+  border: 1px solid var(--crystal-border);
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.06);
+}
+
+.confirmation-icon {
+  width: 75px;
+
+  height: 75px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(37, 211, 102, 0.12);
+
+  color: var(--crystal-green);
+
+  font-size: 30px;
+}
+
+.confirmation-card .section-tag {
+  color: var(--crystal-gold-dark);
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.confirmation-card h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 2rem;
+
+  margin: 12px 0;
+}
+
+.confirmation-card > p:not(.section-tag) {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CONFIRMATION DETAILS
+========================================================= */
+
+.confirmation-details {
+  margin: 30px 0;
+
+  padding: 20px;
+
+  background: #faf8f6;
+
+  border-radius: 12px;
+
+  text-align: left;
+}
+
+.confirmation-details p {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 12px 0;
+
+  margin: 0;
+
+  border-bottom: 1px solid #e9e5df;
+
+  font-size: 13px;
+}
+
+.confirmation-details p:last-child {
+  border-bottom: none;
+}
+
+.confirmation-details strong {
+  color: #777;
+
+  font-weight: 500;
+}
+
+.confirmation-details span {
+  color: var(--crystal-black);
+
+  font-weight: 600;
+
+  text-align: right;
+}
+
+/* =========================================================
+   CONFIRMATION BUTTONS
+========================================================= */
+
+.confirmation-actions {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.whatsapp-btn,
+.back-services-btn {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 50px;
+
+  padding: 13px 20px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn {
+  background: var(--crystal-green);
+
+  color: #fff;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
+}
+
+.back-services-btn {
+  border: 1px solid #ddd;
+
+  color: var(--crystal-black);
+
+  background: #fff;
+}
+
+.back-services-btn:hover {
+  border-color: var(--crystal-gold);
+
+  color: var(--crystal-gold-dark);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 600px) {
+  .booking-page {
+    padding: 50px 25px 100px;
+  }
+
+  .booking-heading h1 {
+    font-size: 2.4rem;
+  }
+
+  .booking-service {
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  .service-price {
+    border-top: none;
+
+    padding-top: 0;
+
+    gap: 25px;
+
+    flex-shrink: 0;
+  }
+
+  .time-slots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .step-actions {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .continue-btn,
+  .back-btn {
+    min-width: 160px;
+  }
+
+  .confirmation-actions {
+    flex-direction: row;
+  }
+
+  .whatsapp-btn,
+  .back-services-btn {
+    flex: 1;
+  }
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 900px) {
+  .booking-page {
+    padding: 70px 30px 120px;
+  }
+
+  .booking-heading h1 {
+    font-size: 2.8rem;
+  }
+
+  .booking-heading > p:last-child {
+    font-size: 15px;
+  }
+
+  .booking-service {
+    padding: 25px 30px;
+  }
+
+  .date-time-container {
+    padding: 40px;
+  }
+
+  .time-slots {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .review-card {
+    max-width: 800px;
+
+    margin: auto;
+  }
+
+  .confirmation-card {
+    padding: 60px 50px;
+  }
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+  .booking-container {
+    max-width: 1150px;
+  }
+
+  .booking-heading h1 {
+    font-size: 3rem;
+  }
+
+  .booking-service:hover {
+    transform: translateY(-3px);
+  }
+}
