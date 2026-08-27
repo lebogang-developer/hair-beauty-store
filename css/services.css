@@ -203,6 +203,10 @@
   margin: 0 auto 45px;
 }
 
+.booking-heading h2 {
+  margin: 10px;
+}
+
 .booking-heading .section-tag {
   color: var(--crystal-gold-dark);
 

@@ -265,7 +265,7 @@ h3 {
 .hero {
   position: relative;
   height: 90vh;
-  background: url("../assets/images/featured/hero-img.png") center/cover
+  background: url("../assets/images/shop/wig-1.jpg") center/cover
     no-repeat;
   display: flex;
   align-items: center;
@@ -332,8 +332,8 @@ h3 {
 /* 💻 Desktop */
 @media (min-width: 768px) {
   .hero {
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     padding: 60px;
   }
 
@@ -351,6 +351,7 @@ h3 {
 
   .hero-buttons {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
