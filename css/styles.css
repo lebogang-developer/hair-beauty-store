@@ -329,6 +329,12 @@ h3 {
   color: #fff;
 }
 
+/* Mobile Devices */
+
+@media (min-width: 500px){
+
+}
+
 /* 💻 Desktop */
 @media (min-width: 768px) {
   .hero {
