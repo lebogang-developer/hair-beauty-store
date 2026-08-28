@@ -7,6 +7,23 @@
 /* =========================================================
    GLOBAL BOOKING VARIABLES
 ========================================================= */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
 
 :root {
   --crystal-gold: #d4af37;
